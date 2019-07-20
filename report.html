@@ -13137,23 +13137,23 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 载入此项目需要的库</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">visuals</span> <span class="k">as</span> <span class="nn">vs</span> <span class="c1"># Supplementary code 补充的可视化代码</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 载入此项目需要的库</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">visuals</span> <span class="kn">as</span> <span class="nn">vs</span> <span class="c1"># Supplementary code 补充的可视化代码</span>
 
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn&#39;</span><span class="p">)</span> <span class="c1"># use seaborn style 使用seaborn风格</span>
 
 <span class="kn">import</span> <span class="nn">warnings</span>
 <span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
 
 <span class="o">%</span><span class="k">matplotlib</span> inline
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;你已经成功载入所有库！&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;你已经成功载入所有库！&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13191,14 +13191,14 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 1 TODO：载入波士顿房屋的数据集：使用pandas载入csv，并赋值到data_df</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 1 TODO：载入波士顿房屋的数据集：使用pandas载入csv，并赋值到data_df</span>
 <span class="n">data_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;housedata.csv&#39;</span><span class="p">)</span>
 
 <span class="c1"># 成功载入的话输出训练数据行列数目</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Boston housing dataset has </span><span class="si">{}</span><span class="s2"> data points with </span><span class="si">{}</span><span class="s2"> variables each.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="o">*</span><span class="n">data_df</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Boston housing dataset has {} data points with {} variables each.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="o">*</span><span class="n">data_df</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -13256,11 +13256,11 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 2.1 TODO: 打印出前7条data_df</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">data_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">7</span><span class="p">))</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 2.1 TODO: 打印出前7条data_df</span>
+<span class="k">print</span><span class="p">(</span><span class="n">data_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">7</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -13323,11 +13323,11 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 2.2 TODO: 删除data_df中的Id特征（保持数据仍在data_df中，不更改变量名）</span>
-<span class="n">data_df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Id&#39;</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 2.2 TODO: 删除data_df中的Id特征（保持数据仍在data_df中，不更改变量名）</span>
+<span class="n">data_df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Id&#39;</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13345,10 +13345,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 2.3 TODO:</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 2.3 TODO:</span>
 <span class="n">data_df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
 
@@ -13362,7 +13362,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[5]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -13653,10 +13653,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 3.1.1 TODO:绘制要求的图形</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 3.1.1 TODO:绘制要求的图形</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">data_df</span><span class="p">[</span><span class="s1">&#39;GrLivArea&#39;</span><span class="p">],</span><span class="n">data_df</span><span class="p">[</span><span class="s1">&#39;SalePrice&#39;</span><span class="p">])</span>
 </pre></div>
 
@@ -13670,13 +13670,13 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[6]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.collections.PathCollection at 0x2688328f748&gt;</pre>
+<pre>&lt;matplotlib.collections.PathCollection at 0x1a22ca2f10&gt;</pre>
 </div>
 
 </div>
@@ -13710,14 +13710,14 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 3.1.2 </span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 3.1.2 </span>
 <span class="c1"># TODO:从data_df中删除 GrLivArea大于4000 且 SalePrice低于300000 的值</span>
 <span class="k">for</span> <span class="n">index</span><span class="p">,</span><span class="n">row</span> <span class="ow">in</span> <span class="n">data_df</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
     <span class="k">if</span>  <span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;GrLivArea&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">4000</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;SalePrice&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">300000</span><span class="p">):</span>
-        <span class="n">data_df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">data_df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 
 <span class="c1"># TODO:重新绘制GrLivArea和SalePrice的关系图，确认异常值已删除</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">data_df</span><span class="p">[</span><span class="s1">&#39;GrLivArea&#39;</span><span class="p">],</span><span class="n">data_df</span><span class="p">[</span><span class="s1">&#39;SalePrice&#39;</span><span class="p">])</span>
@@ -13733,13 +13733,13 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[7]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.collections.PathCollection at 0x268833b6e10&gt;</pre>
+<pre>&lt;matplotlib.collections.PathCollection at 0x1a2252e5d0&gt;</pre>
 </div>
 
 </div>
@@ -13782,17 +13782,17 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">limit_percent</span> <span class="o">=</span> <span class="mf">0.25</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">limit_percent</span> <span class="o">=</span> <span class="mf">0.25</span>
 <span class="n">limit_value</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_df</span><span class="p">)</span> <span class="o">*</span> <span class="n">limit_percent</span>
 <span class="c1"># 3.2.1 TODO 统计并打印出超过25%的空数据的特征，你可以考虑使用isna()</span>
 <span class="n">offset</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">data_df</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">any</span><span class="p">():</span>
-    <span class="k">if</span> <span class="n">item</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">item</span> <span class="o">==</span> <span class="bp">True</span><span class="p">:</span>
          <span class="k">if</span><span class="p">(</span><span class="n">data_df</span><span class="p">[</span><span class="n">data_df</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">offset</span><span class="p">]]</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">&gt;</span> <span class="n">limit_value</span><span class="p">):</span>
-            <span class="nb">print</span><span class="p">(</span><span class="n">data_df</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">offset</span><span class="p">])</span>
+            <span class="k">print</span><span class="p">(</span><span class="n">data_df</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">offset</span><span class="p">])</span>
     <span class="n">offset</span> <span class="o">=</span> <span class="n">offset</span> <span class="o">+</span> <span class="mi">1</span>
 </pre></div>
 
@@ -13828,7 +13828,7 @@ MiscFeature
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 需要填充众数的特征</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 需要填充众数的特征</span>
 <span class="n">fill_Mode</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Electrical&#39;</span><span class="p">]</span> 
 <span class="c1"># 需要填充None的特征</span>
 <span class="n">fill_None</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Alley&#39;</span><span class="p">,</span> <span class="s1">&#39;MasVnrType&#39;</span><span class="p">,</span> <span class="s1">&#39;BsmtQual&#39;</span><span class="p">,</span> <span class="s1">&#39;BsmtCond&#39;</span><span class="p">,</span> <span class="s1">&#39;BsmtExposure&#39;</span><span class="p">,</span> <span class="s1">&#39;BsmtFinType1&#39;</span><span class="p">,</span> 
@@ -13854,20 +13854,20 @@ MiscFeature
 
 <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">fill_Mode</span><span class="p">:</span>
     <span class="n">value</span> <span class="o">=</span> <span class="n">grade_mode</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">data_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,[</span><span class="n">name</span><span class="p">][</span><span class="mi">0</span><span class="p">]]))</span>
-    <span class="n">data_df</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="n">value</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">data_df</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="n">value</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
     <span class="c1">#print(data_df.loc[:,[name]].isna().sum())</span>
 
 <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">fill_None</span><span class="p">:</span>
-    <span class="n">data_df</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_df</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s1">&#39;None&#39;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">data_df</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_df</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s1">&#39;None&#39;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
     <span class="c1">#print(data_df.loc[:,[name]].isna().sum())</span>
 
 <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">fill_0</span><span class="p">:</span>
-    <span class="n">data_df</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_df</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">data_df</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_df</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
     <span class="c1">#print(data_df.loc[:,[name]].isna().sum())</span>
     
 <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">fill_median</span><span class="p">:</span>
     <span class="n">data_temp</span> <span class="o">=</span> <span class="n">data_df</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
-    <span class="n">data_temp</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">data_temp</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
     <span class="n">median</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">data_temp</span><span class="p">)</span>
     <span class="n">data_df</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_df</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">median</span><span class="p">)</span>
     <span class="c1">#print(data_df.loc[:,[name]].isna().sum())</span>
@@ -13899,14 +13899,14 @@ MiscFeature
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 直接运行不用修改</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 直接运行不用修改</span>
 <span class="c1"># 确定所有空特征</span>
 <span class="n">missing_columns</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">data_df</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">data_df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">])</span>
 <span class="c1"># 确定哪些是类别特征，哪些是数值特征</span>
 <span class="n">missing_numerical</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">data_df</span><span class="p">[</span><span class="n">missing_columns</span><span class="p">]</span><span class="o">.</span><span class="n">dtypes</span><span class="p">[</span><span class="n">data_df</span><span class="p">[</span><span class="n">missing_columns</span><span class="p">]</span><span class="o">.</span><span class="n">dtypes</span> <span class="o">!=</span> <span class="s1">&#39;object&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
 <span class="n">missing_category</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">missing_columns</span> <span class="k">if</span> <span class="n">i</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">missing_numerical</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;missing_numerical:&quot;</span><span class="p">,</span><span class="n">missing_numerical</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;missing_category:&quot;</span><span class="p">,</span><span class="n">missing_category</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;missing_numerical:&quot;</span><span class="p">,</span><span class="n">missing_numerical</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;missing_category:&quot;</span><span class="p">,</span><span class="n">missing_category</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13923,8 +13923,8 @@ MiscFeature
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>missing_numerical: []
-missing_category: [&#39;Alley&#39;, &#39;MasVnrType&#39;, &#39;BsmtQual&#39;, &#39;BsmtCond&#39;, &#39;BsmtExposure&#39;, &#39;BsmtFinType1&#39;, &#39;BsmtFinType2&#39;, &#39;FireplaceQu&#39;, &#39;GarageType&#39;, &#39;GarageYrBlt&#39;, &#39;GarageFinish&#39;, &#39;GarageQual&#39;, &#39;GarageCond&#39;, &#39;PoolQC&#39;, &#39;Fence&#39;, &#39;MiscFeature&#39;]
+<pre>(&#39;missing_numerical:&#39;, [&#39;LotFrontage&#39;, &#39;MasVnrArea&#39;, &#39;GarageYrBlt&#39;])
+(&#39;missing_category:&#39;, [&#39;Alley&#39;, &#39;MasVnrType&#39;, &#39;BsmtQual&#39;, &#39;BsmtCond&#39;, &#39;BsmtExposure&#39;, &#39;BsmtFinType1&#39;, &#39;BsmtFinType2&#39;, &#39;Electrical&#39;, &#39;FireplaceQu&#39;, &#39;GarageType&#39;, &#39;GarageFinish&#39;, &#39;GarageQual&#39;, &#39;GarageCond&#39;, &#39;PoolQC&#39;, &#39;Fence&#39;, &#39;MiscFeature&#39;])
 </pre>
 </div>
 </div>
@@ -13954,7 +13954,7 @@ missing_category: [&#39;Alley&#39;, &#39;MasVnrType&#39;, &#39;BsmtQual&#39;, &#
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 4.1 TODO:绘制要求的图形</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 4.1 TODO:绘制要求的图形</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">data_df</span><span class="p">[</span><span class="s1">&#39;SalePrice&#39;</span><span class="p">]</span>
 <span class="n">bins</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">5000</span><span class="p">,</span><span class="mi">400000</span><span class="p">,</span><span class="mi">5000</span><span class="p">)</span><span class="c1">#设置连续的边界值，即直方图的分布区间[0,10],[10,20]...</span>
 <span class="n">width</span><span class="o">=</span><span class="mi">10</span>
@@ -13993,7 +13993,7 @@ missing_category: [&#39;Alley&#39;, &#39;MasVnrType&#39;, &#39;BsmtQual&#39;, &#
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>回答问题4.1：<code>'SalePrice'</code>属于<strong>右偏斜<em>__</em></strong>分布</p>
+<p>回答问题4.1：<code>'SalePrice'</code>属于<strong>右偏态<em>__</em></strong>分布</p>
 
 </div>
 </div>
@@ -14011,14 +14011,14 @@ missing_category: [&#39;Alley&#39;, &#39;MasVnrType&#39;, &#39;BsmtQual&#39;, &#
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 不用修改直接运行</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 不用修改直接运行</span>
 <span class="n">corrmat</span> <span class="o">=</span> <span class="n">data_df</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span><span class="o">.</span><span class="n">abs</span><span class="p">()</span>
-<span class="n">top_corr</span> <span class="o">=</span> <span class="n">corrmat</span><span class="p">[</span><span class="n">corrmat</span><span class="p">[</span><span class="s2">&quot;SalePrice&quot;</span><span class="p">]</span><span class="o">&gt;</span><span class="mf">0.5</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;SalePrice&quot;</span><span class="p">],</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">index</span>
+<span class="n">top_corr</span> <span class="o">=</span> <span class="n">corrmat</span><span class="p">[</span><span class="n">corrmat</span><span class="p">[</span><span class="s2">&quot;SalePrice&quot;</span><span class="p">]</span><span class="o">&gt;</span><span class="mf">0.5</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;SalePrice&quot;</span><span class="p">],</span> <span class="n">ascending</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">index</span>
 <span class="n">cm</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">corrcoef</span><span class="p">(</span><span class="n">data_df</span><span class="p">[</span><span class="n">top_corr</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">T</span><span class="p">))</span>
 <span class="n">f</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">9</span><span class="p">))</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">font_scale</span><span class="o">=</span><span class="mf">1.3</span><span class="p">)</span>
-<span class="n">hm</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">cm</span><span class="p">,</span> <span class="n">cbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-                 <span class="n">square</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s1">&#39;.2f&#39;</span><span class="p">,</span> <span class="n">annot_kws</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;size&#39;</span><span class="p">:</span> <span class="mi">13</span><span class="p">},</span> 
+<span class="n">hm</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">cm</span><span class="p">,</span> <span class="n">cbar</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+                 <span class="n">square</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s1">&#39;.2f&#39;</span><span class="p">,</span> <span class="n">annot_kws</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;size&#39;</span><span class="p">:</span> <span class="mi">13</span><span class="p">},</span> 
                  <span class="n">yticklabels</span><span class="o">=</span><span class="n">top_corr</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">xticklabels</span><span class="o">=</span><span class="n">top_corr</span><span class="o">.</span><span class="n">values</span><span class="p">);</span>
 <span class="n">data_df</span> <span class="o">=</span> <span class="n">data_df</span><span class="p">[</span><span class="n">top_corr</span><span class="p">]</span>
 </pre></div>
@@ -14074,9 +14074,9 @@ missing_category: [&#39;Alley&#39;, &#39;MasVnrType&#39;, &#39;BsmtQual&#39;, &#
 <div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 不要修改，直接运行</span>
-<span class="kn">from</span> <span class="nn">scipy.special</span> <span class="k">import</span> <span class="n">boxcox1p</span>
-<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="k">import</span> <span class="n">StandardScaler</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 不要修改，直接运行</span>
+<span class="kn">from</span> <span class="nn">scipy.special</span> <span class="kn">import</span> <span class="n">boxcox1p</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
 
 <span class="n">data_df</span><span class="p">[</span><span class="s1">&#39;SalePrice&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log1p</span><span class="p">(</span><span class="n">data_df</span><span class="p">[</span><span class="s1">&#39;SalePrice&#39;</span><span class="p">])</span>
 <span class="n">numeric_features</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">data_df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
@@ -14131,8 +14131,8 @@ missing_category: [&#39;Alley&#39;, &#39;MasVnrType&#39;, &#39;BsmtQual&#39;, &#
 <div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 5.1 TODO: 引入 &#39;r2_score&#39;</span>
-<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">r2_score</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 5.1 TODO: 引入 &#39;r2_score&#39;</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">r2_score</span>
 <span class="k">def</span> <span class="nf">performance_metric</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_predict</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot; Calculates and returns the performance score between </span>
 <span class="sd">        true and predicted values based on the metric chosen. &quot;&quot;&quot;</span>
@@ -14154,27 +14154,27 @@ missing_category: [&#39;Alley&#39;, &#39;MasVnrType&#39;, &#39;BsmtQual&#39;, &#
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 问题 5.2:拟合程度</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 问题 5.2:拟合程度</span>
 
-<span class="n">假设一个数据集有五个数据且某一模型做出下列目标变量的预测</span><span class="err">：</span>
+<span class="err">假设一个数据集有五个数据且某一模型做出下列目标变量的预测：</span>
 
-<span class="o">|</span> <span class="n">真实数值</span> <span class="o">|</span> <span class="n">预测数值</span> <span class="o">|</span>
+<span class="o">|</span> <span class="err">真实数值</span> <span class="o">|</span> <span class="err">预测数值</span> <span class="o">|</span>
 <span class="o">|</span> <span class="p">:</span><span class="o">-------------</span><span class="p">:</span> <span class="o">|</span> <span class="p">:</span><span class="o">--------</span><span class="p">:</span> <span class="o">|</span>
 <span class="o">|</span> <span class="mf">3.0</span> <span class="o">|</span> <span class="mf">2.5</span> <span class="o">|</span>
 <span class="o">|</span> <span class="o">-</span><span class="mf">0.5</span> <span class="o">|</span> <span class="mf">0.0</span> <span class="o">|</span>
 <span class="o">|</span> <span class="mf">2.0</span> <span class="o">|</span> <span class="mf">2.1</span> <span class="o">|</span>
 <span class="o">|</span> <span class="mf">7.0</span> <span class="o">|</span> <span class="mf">7.8</span> <span class="o">|</span>
 <span class="o">|</span> <span class="mf">4.2</span> <span class="o">|</span> <span class="mf">5.3</span> <span class="o">|</span>
-<span class="o">*</span><span class="n">你觉得这个模型已成功地描述了目标变量的变化吗</span><span class="err">？</span><span class="n">如果成功</span><span class="err">，</span><span class="n">请解释为什么</span><span class="err">，</span><span class="n">如果没有</span><span class="err">，</span><span class="n">也请给出原因</span><span class="err">。</span><span class="o">*</span>  
+<span class="o">*</span><span class="err">你觉得这个模型已成功地描述了目标变量的变化吗？如果成功，请解释为什么，如果没有，也请给出原因。</span><span class="o">*</span>  
 
-<span class="o">**</span><span class="n">提示1</span><span class="o">**</span><span class="err">：</span><span class="n">运行下方的代码</span><span class="err">，</span><span class="n">使用</span> <span class="err">`</span><span class="n">performance_metric</span><span class="err">`</span> <span class="n">函数来计算</span> <span class="err">`</span><span class="n">y_true</span><span class="err">`</span> <span class="n">和</span> <span class="err">`</span><span class="n">y_predict</span><span class="err">`</span> <span class="n">的决定系数</span><span class="err">。</span>
+<span class="o">**</span><span class="err">提示</span><span class="mi">1</span><span class="o">**</span><span class="err">：运行下方的代码，使用</span> <span class="sb">`performance_metric`</span> <span class="err">函数来计算</span> <span class="sb">`y_true`</span> <span class="err">和</span> <span class="sb">`y_predict`</span> <span class="err">的决定系数。</span>
 
-<span class="o">**</span><span class="n">提示2</span><span class="o">**</span><span class="err">：$</span><span class="n">R</span><span class="o">^</span><span class="mi">2</span><span class="err">$</span> <span class="n">分数是指可以从自变量中预测的因变量的方差比例</span><span class="err">。</span> <span class="n">换一种说法</span><span class="err">：</span>
+<span class="o">**</span><span class="err">提示</span><span class="mi">2</span><span class="o">**</span><span class="err">：$</span><span class="n">R</span><span class="o">^</span><span class="mi">2</span><span class="err">$</span> <span class="err">分数是指可以从自变量中预测的因变量的方差比例。</span> <span class="err">换一种说法：</span>
 
-<span class="o">*</span> <span class="err">$</span><span class="n">R</span><span class="o">^</span><span class="mi">2</span><span class="err">$</span> <span class="n">为0意味着因变量不能从自变量预测</span><span class="err">。</span>
-<span class="o">*</span> <span class="err">$</span><span class="n">R</span><span class="o">^</span><span class="mi">2</span><span class="err">$</span> <span class="n">为1意味着可以从自变量预测因变量</span><span class="err">。</span>
-<span class="o">*</span> <span class="err">$</span><span class="n">R</span><span class="o">^</span><span class="mi">2</span><span class="err">$</span> <span class="n">在0到1之间表示因变量可预测的程度</span><span class="err">。</span>
-<span class="o">*</span> <span class="err">$</span><span class="n">R</span><span class="o">^</span><span class="mi">2</span><span class="err">$</span> <span class="n">为0</span><span class="o">.</span><span class="mi">40</span><span class="n">意味着</span> <span class="n">Y</span> <span class="n">中40</span><span class="err">％</span><span class="n">的方差可以从</span> <span class="n">X</span> <span class="n">预测</span><span class="err">。</span>
+<span class="o">*</span> <span class="err">$</span><span class="n">R</span><span class="o">^</span><span class="mi">2</span><span class="err">$</span> <span class="err">为</span><span class="mi">0</span><span class="err">意味着因变量不能从自变量预测。</span>
+<span class="o">*</span> <span class="err">$</span><span class="n">R</span><span class="o">^</span><span class="mi">2</span><span class="err">$</span> <span class="err">为</span><span class="mi">1</span><span class="err">意味着可以从自变量预测因变量。</span>
+<span class="o">*</span> <span class="err">$</span><span class="n">R</span><span class="o">^</span><span class="mi">2</span><span class="err">$</span> <span class="err">在</span><span class="mi">0</span><span class="err">到</span><span class="mi">1</span><span class="err">之间表示因变量可预测的程度。</span>
+<span class="o">*</span> <span class="err">$</span><span class="n">R</span><span class="o">^</span><span class="mi">2</span><span class="err">$</span> <span class="err">为</span><span class="mf">0.40</span><span class="err">意味着</span> <span class="n">Y</span> <span class="err">中</span><span class="mi">40</span><span class="err">％的方差可以从</span> <span class="n">X</span> <span class="err">预测。</span>
 </pre></div>
 
     </div>
@@ -14187,9 +14187,9 @@ missing_category: [&#39;Alley&#39;, &#39;MasVnrType&#39;, &#39;BsmtQual&#39;, &#
 <div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#TODO 5.2：计算这一模型的表现</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#TODO 5.2：计算这一模型的表现</span>
 <span class="n">score</span> <span class="o">=</span> <span class="n">performance_metric</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mf">4.2</span><span class="p">],</span> <span class="p">[</span><span class="mf">2.5</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">2.1</span><span class="p">,</span> <span class="mf">7.8</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Model has a coefficient of determination, R^2, of </span><span class="si">{:.3f}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">score</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Model has a coefficient of determination, R^2, of {:.3f}.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">score</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -14245,12 +14245,12 @@ missing_category: [&#39;Alley&#39;, &#39;MasVnrType&#39;, &#39;BsmtQual&#39;, &#
 <div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: 6.1 </span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: 6.1 </span>
 <span class="c1">#TODO：提取SalePrice作为labels</span>
 <span class="n">labels</span> <span class="o">=</span> <span class="n">data_df</span><span class="p">[</span><span class="s1">&#39;SalePrice&#39;</span><span class="p">]</span>
 <span class="c1">#TODO：提取除了SalePrice以外的特征赋值为features</span>
 <span class="n">features</span> <span class="o">=</span> <span class="n">data_df</span>
-<span class="n">features</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;SalePrice&#39;</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">features</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;SalePrice&#39;</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 
 <span class="c1">#print(labels.head(7))</span>
 <span class="c1">#print(features.head(7))</span>
@@ -14324,13 +14324,13 @@ Name: SalePrice, dtype: float64
 <div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: 引入 &#39;train_test_split&#39;</span>
-<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">train_test_split</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: 引入 &#39;train_test_split&#39;</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
 <span class="c1"># TODO: 打乱并分割训练集与测试集</span>
 <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 
 <span class="c1"># 成功~</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Training and testing split was successful.&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Training and testing split was successful.&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14370,7 +14370,7 @@ Name: SalePrice, dtype: float64
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>问题 6.3 - 回答:为了测试算法的有效性和实用性</p>
+<p>问题 6.3 - 回答:1.为了测试算法的有效性和实用性  2.如果使用模型见过的数据来测试，会让人误认为算法准确率较高，在遇到新的测试数据时算法准确率抖动较大。</p>
 
 </div>
 </div>
@@ -14398,7 +14398,7 @@ Name: SalePrice, dtype: float64
 <div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Produce learning curves for varying training set sizes and maximum depths</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Produce learning curves for varying training set sizes and maximum depths</span>
 <span class="n">vs</span><span class="o">.</span><span class="n">ModelLearning</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
 </pre></div>
 
@@ -14445,7 +14445,7 @@ Name: SalePrice, dtype: float64
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>问题 7 - 回答:1.第三个图，深度6。   2.随着训练数据量的增加，训练评分值下降，验证集曲线上升。  3.拥有更多的训练数据，能有效提升模型表现。</p>
+<p>问题 7 - 回答:1.第2个图，深度3。   2.随着训练数据量的增加，训练评分值下降，但验证集曲线上升。  3.拥有更多的训练数据，在一定范围内能有效提升模型表现，但最大深度3时拥有少量数据已可以在R2在高值时收敛，比较划算。</p>
 
 </div>
 </div>
@@ -14464,7 +14464,7 @@ Name: SalePrice, dtype: float64
 <div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">vs</span><span class="o">.</span><span class="n">ModelComplexity</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">vs</span><span class="o">.</span><span class="n">ModelComplexity</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14510,7 +14510,7 @@ Name: SalePrice, dtype: float64
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>问题 8 - 回答:1.最大深度为1时，欠拟合  2.最大深度为10时，过拟合  3.途中使用最大深度1时，r2_score的值低， 但最大深度10时验证集距离训练集的分数相差较远。</p>
+<p>问题 8 - 回答:1.最大深度为1时，欠拟合，预测呈现高偏差  2.最大深度为10时，过拟合，预测呈现高方差  3.途中使用最大深度1时，r2_score的值低，高偏差； 但最大深度10时验证集距离训练集的分数相差较远，高方差。</p>
 
 </div>
 </div>
@@ -14530,7 +14530,7 @@ Name: SalePrice, dtype: float64
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>问题 9 - 回答:1.猜测最大深度为5时模型较好  2.最大深度为5时，ValidationScore值较大且距TrainingScore较近</p>
+<p>问题 9 - 回答:1.猜测最大深度为5时模型较好  2.最大深度为5时，ValidationScore已达到极大值。</p>
 
 </div>
 </div>
@@ -14560,7 +14560,7 @@ Name: SalePrice, dtype: float64
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>问题 10 - 回答:网格搜索法：主要是用来降低复杂度。对于一个给定的问题，我们事先不知道入参取多少最优，因此我们要进行模型选择（参数搜索），将各个参数可能的取值进行排列组合，列出所有可能的组合结果生成“网格”。
-优化模型：在拟合函数尝试了所有的参数组合后，返回一个合适的分类器，自动调整至最佳参数组合，可以通过clf.best_params_获得参数值。</p>
+优化模型：在拟合函数尝试了所有的参数组合后，返回一个合适的分类器，自动调整至最佳参数组合，可以通过clf.best<em>params</em>获得参数值。</p>
 
 </div>
 </div>
@@ -14584,10 +14584,10 @@ Name: SalePrice, dtype: float64
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>问题 11 - 回答：
-1.K-fold cross-validation (k-CV)是Double cross-validation的延伸，做法是将数据集分成k个子集，每个子集均做一次测试集，其余的作为训练集。k-CV交叉验证重复k次，每次选择一个子集作为测试集，并将k次的平均交叉验证识别率作为结果。
-2.GridSearchCV将cv参数(决定交叉验证的方式)作为入参，代入计算。
-3.可以用来输出训练结果。
-4.K折交叉验证能有效保证算法的泛化能力。</p>
+1.K-fold 先将数据集划分为k个大小相似的互斥子集，然后，每次用k-1个子集并集作为训练集，余下的那个子集作为测试集，进行k次训练和测试，最终返回k次测试结果的均值。【来自西瓜书】
+2.GridSearchCV 对每一个参数组合进行一次 K 折交叉验证，得到对应的平均分数；最后选择平均分数最高的参数组合作为模型的最优参数组合，可通过 best<em>params</em> 属性获得该参数组合。
+3.可以用来输出训练结果。cv_results 属性返回一个字典，记录了每一组网格参数每一次训练/验证( K 折对应 K 次)对应的训练结果，包括训练/验证时间、训练/验证评估分数以及相关时间和评分的统计信息。
+4.K折交叉验证能有效保证算法的泛化能力,与hold-out（留出法）相比，K-Fold能够避免训练集和测试集的划分比例的变化带来的方差高的缺点。</p>
 
 </div>
 </div>
@@ -14615,11 +14615,11 @@ Name: SalePrice, dtype: float64
 <div class="prompt input_prompt">In&nbsp;[81]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Import &#39;make_scorer&#39;, &#39;DecisionTreeRegressor&#39;, and &#39;GridSearchCV&#39;</span>
-<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">make_scorer</span>
-<span class="kn">from</span> <span class="nn">sklearn.grid_search</span> <span class="k">import</span> <span class="n">GridSearchCV</span>
-<span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="k">import</span> <span class="n">DecisionTreeRegressor</span>
-<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">StratifiedKFold</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import &#39;make_scorer&#39;, &#39;DecisionTreeRegressor&#39;, and &#39;GridSearchCV&#39;</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">make_scorer</span>
+<span class="kn">from</span> <span class="nn">sklearn.grid_search</span> <span class="kn">import</span> <span class="n">GridSearchCV</span>
+<span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeRegressor</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">StratifiedKFold</span>
 
 <span class="k">def</span> <span class="nf">fit_model</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot; Performs grid search over the &#39;max_depth&#39; parameter for a </span>
@@ -14675,11 +14675,11 @@ Name: SalePrice, dtype: float64
 <div class="prompt input_prompt">In&nbsp;[84]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Fit the training data to the model using grid search</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Fit the training data to the model using grid search</span>
 <span class="n">reg</span> <span class="o">=</span> <span class="n">fit_model</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 
 <span class="c1"># Produce the value for &#39;max_depth&#39;</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Parameter &#39;max_depth&#39; is </span><span class="si">{}</span><span class="s2"> for the optimal model.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">reg</span><span class="o">.</span><span class="n">get_params</span><span class="p">()[</span><span class="s1">&#39;max_depth&#39;</span><span class="p">]))</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Parameter &#39;max_depth&#39; is {} for the optimal model.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">reg</span><span class="o">.</span><span class="n">get_params</span><span class="p">()[</span><span class="s1">&#39;max_depth&#39;</span><span class="p">]))</span>
 </pre></div>
 
     </div>
@@ -14719,12 +14719,12 @@ Name: SalePrice, dtype: float64
 <div class="prompt input_prompt">In&nbsp;[85]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">depth</span> <span class="o">=</span> <span class="mi">6</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">depth</span> <span class="o">=</span> <span class="mi">6</span>
 <span class="n">regressor</span> <span class="o">=</span> <span class="n">DecisionTreeRegressor</span><span class="p">(</span><span class="n">max_depth</span> <span class="o">=</span> <span class="n">depth</span><span class="p">)</span>
 <span class="n">regressor</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 <span class="n">y_pred</span> <span class="o">=</span> <span class="n">regressor</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
 <span class="n">score</span> <span class="o">=</span> <span class="n">performance_metric</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The R2 score is &quot;</span><span class="p">,</span><span class="n">score</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;The R2 score is &quot;</span><span class="p">,</span><span class="n">score</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14762,8 +14762,12 @@ Name: SalePrice, dtype: float64
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>回答问题12.2：
-1.还行吧。
-2.改变GridSearchCV中cv的数值，看能否提高R2 score。结果是还可以提高。</p>
+1.应该还有上升空间。
+2：
+2.1改变GridSearchCV中cv的数值，看能否提高R2 score。结果是还可以提高；
+2.2尝试使用决策树以外的算法模型或使用组合算法；
+2.3适当增加输入的数据总量（包括训练集和测试集），以利于KFold评估；
+2.4尝试调整评估模型，如使用bootstrapping。</p>
 
 </div>
 </div>
